@@ -11,7 +11,7 @@ body{
 #Wrapper{width: 1320px; margin: 0 auto;}
 #header{width: 100%; height: 200px;}
 #section{width: 100%; height: auto;}
-#footer{width: 100%;  height: 300px;}
+#footer{width: 100%;  height: auto; }
 
 /* header */
 
@@ -68,7 +68,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows:repeat(4, 300px);
     grid-gap: 20px;
-    overflow: hidden;
+   
     
 }
 .gallery > img{
@@ -107,17 +107,22 @@ body{
 /* 모바일 */
 @media all and (max-width: 767px){
     #Wrapper{width: 100%;}
-    #header{padding-left: 20px; padding-right: 20px;}
+    #header{padding-left: 10px; padding-right: 10px;}
     .header-box > button{padding: 5px; font-size: 10px;}
+    .header-container .nav > ul > li{font-size: 10px;}
+    .header-box > button{padding: 5px; font-size: 8px;}
     .gallery{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows:repeat(4, 100px);
         grid-gap: 10px;
-        padding-left: 20px; 
-        padding-right: 20px;
+        padding-left: 10px; 
+        padding-right: 10px;
     }
-    #footer{height: 100px;}
+    #footer{height: auto; padding: 30px;}
+    .f-footer > p{ font-size: 5px;}
+    .f-content > p{font-size: 8px; padding-bottom: 10px;}
+    .f-icon > i{font-size: 10px; padding-bottom: 10px;}
 }
 
 /* 태블릿 */
@@ -134,7 +139,10 @@ body{
         padding-left: 20px; 
         padding-right: 20px;
     }
-    #footer{height: 100px;}
+    #footer{height: auto; padding: 30px;}
+    .f-footer > p{ font-size: 5px;}
+    .f-content > p{font-size: 8px; padding-bottom: 10px;}
+    .f-icon > i{font-size: 10px; padding-bottom: 10px;}
     
 }
 
@@ -142,4 +150,5 @@ body{
 
 @media all and (min-width: 1025px) {
     #Wrapper{width: 95%;}
+    #footer{height: auto; padding: 30px;}
 }
