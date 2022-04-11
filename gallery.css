@@ -48,9 +48,6 @@ body{
     text-decoration: none;
     color: #000;
 }
-#underline{
-    text-decoration: underline;
-}
 
 .header-box > button{
     padding: 10px;
