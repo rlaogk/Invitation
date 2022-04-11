@@ -66,17 +66,23 @@ body{
     background-color: #F2F3F4;
     display: flex;
     flex-direction: column;
+    background-image: url(./wedding-img/alina_cover.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
 }
 #section-container{
     position: relative;
     top: 25%;
+    color: #fff;
 }
 .heart{
     text-align: center;
     font-size: 25px;
 }
 .s-title{
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     padding-top: 40px;
 }
@@ -88,8 +94,8 @@ body{
     text-decoration: none;
     font-size: 15px;
     font-family: 200;
-    color: #000;
-    border: 2px solid #000;
+    color: #fff;
+    border: 2px solid #fff;
     padding: 20px;
 }
 
