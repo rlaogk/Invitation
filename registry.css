@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* 전체영역 */
+
+#Wrapper{width: 1320px; margin: 0 auto;}
+#header{width: 100%; height: 200px;}
+#section{width: 100%; height: 600px;}
+#footer{width: 100%;  height: 300px;}
+
+/* header */
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.icon > i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.header-container{
+    display: flex;
+    flex-direction: column;
+}
+.header-container .title{
+    padding-bottom: 30px;
+}
+.header-container .title > h4{
+    font-size: 25px;
+    text-align: center;
+}
+.header-container .nav > ul{
+    display: flex;
+}
+.header-container .nav > ul > li{
+    padding-left: 20px;
+    font-size: 15px;
+    list-style: none;
+    text-align: center;
+}
+.header-container .nav > ul > li > a{
+    text-decoration: none;
+    color: #000;
+}
+#underline{
+    text-decoration: underline;
+}
+.header-box > button{
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    background-color: transparent !important;
+    border: 1px solid black;
+
+}
+/* section */
+
+#section{
+    background-color: #F2F3F4;
+    display: flex;
+    flex-direction: column;
+}
+#section-container{
+    position: relative;
+    top: 25%;
+}
+.heart{
+    text-align: center;
+    font-size: 25px;
+}
+.s-title{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 40px;
+}
+.s-content{
+    text-align: center;
+    padding-top: 80px;
+}
+.s-content > a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 200;
+    color: #000;
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+
+/* footer */
+
+#footer{
+    display: flex;
+    flex-direction: column;
+}
+.f-container{
+    position: relative;
+    top: 40%;
+    text-align: center;
+}
+.f-icon > i{
+    font-size: 20px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.f-content > p{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.f-footer{
+    font-size: 13px;
+}
+/* 미디어쿼리 */
+
+/* 모바일 */
+@media all and (max-width: 767px){
+    #Wrapper{width: 100%;}
+    #Wrapper{width: 100%;}
+    #header{padding-left: 20px; padding-right: 20px;}
+    .header-box > button{padding: 5px; font-size: 8px;}
+    .s-title{font-size: 20px;}
+    .s-content > a{
+        font-size: 13px;
+        border: 1.5px solid #000;
+        padding: 10px;
+    }
+    #footer{height: 100px;}
+    #section-container{position: relative; top: 20%;}
+}
+
+/* 태블릿 */
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    #Wrapper{width: 100%;}
+    #Wrapper{width: 100%;}
+    #header{padding-left: 20px; padding-right: 20px;}
+    .header-box > button{padding: 5px; font-size: 8px;}
+    .s-title{font-size: 25px;}
+    .s-content > a{
+        font-size: 13px;
+        border: 1.5px solid #000;
+        padding: 10px;
+    }
+    #footer{height: 100px;}
+    #section-container{position: relative; top: 25%;}
+}
+
+/* 데스크탑 */
+
+@media all and (min-width: 1025px) {
+    #Wrapper{width: 95%;}
+}
